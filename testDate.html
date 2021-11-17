@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="ccc">
+		<p>The time is <span id="show_time"></span>.</p>
+	</div>
+	
+
+	<script>
+	var show_time = document.getElementById("show_time");
+	var current_date = new Date();
+
+	var pretty_time = `${current_date.getMonth()}/${current_date.getFullYear()}`
+
+	show_time.innerHTML = pretty_time;
+</script>
+</body>
+</html>
